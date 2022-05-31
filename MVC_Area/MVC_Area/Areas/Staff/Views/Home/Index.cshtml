@@ -1,0 +1,36 @@
+﻿@model List<MVC_Area.Models.Order>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="card mt-5">
+    <div class="card-header">
+        <h4>ORDERS</h4>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Ship Country</th>
+                    <th>Ship City</th>
+                    <th>Order Date</th>
+                    <th>Freight</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model)
+                {
+                    <tr>
+                        <td>@order.OrderID</td>
+                        <td>@order.ShipCountry</td>
+                        <td>@order.ShipCity</td>
+                        <td>@order.OrderDate</td>
+                        <td>@order.Freight</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

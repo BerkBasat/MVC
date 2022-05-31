@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "AddProduct";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container" style="margin-top:70px;">
+    <div class="row">
+        <div col="col-md-4">
+            <div>
+                <form method="post">
+                    <div class="form-group">
+                        <label style="margin-bottom:10px; margin-top:10px;" for="ProductName">ProductName</label>
+                        <input type="text" class="form-control" placeholder="Product Name" name="ProductName">
+                    </div>
+                    <div class="form-group">
+                        <label style="margin-bottom:10px; margin-top:10px;" for="SupplierID">SupplierID</label>
+                        <input type="text" class="form-control" placeholder="Supplier ID" name="SupplierID">
+                    </div>
+                    <div class="form-group">
+                        <label style="margin-bottom:10px; margin-top:10px;" for="CategoryID">CategoryID</label>
+                        <input type="text" class="form-control" placeholder="Category ID" name="CategoryID">
+                    </div>
+                    <div class="form-group">
+                        <label style="margin-bottom:10px; margin-top:10px;" for="QuantityPerUnit">QuantityPerUnit</label>
+                        <input type="text" class="form-control" placeholder="Quantity Per Unit" name="QuantityPerUnit">
+                    </div>
+                    <div class="form-group">
+                        <label style="margin-bottom:10px; margin-top:10px;" for="UnitPrice">Unit Price</label>
+                        <input type="text" class="form-control" placeholder="Unit Price" name="UnitPrice">
+                    </div>
+                    <div class="form-group">
+                        <label style="margin-bottom:10px; margin-top:10px;" for="UnitsInStock">UnitsInStock</label>
+                        <input type="text" class="form-control" placeholder="Units In Stock" name="UnitsInStock">
+                    </div>
+                    <div class="form-group">
+                        <label style="margin-bottom:10px; margin-top:10px;" for="UnitsOnOrder">UnitsOnOrder</label>
+                        <input type="text" class="form-control" placeholder="Units On Order" name="UnitsOnOrder">
+                    </div>
+                    <div class="form-group">
+                        <label style="margin-bottom:10px; margin-top:10px;" for="ReorderLevel">ReorderLevel</label>
+                        <input type="text" class="form-control" placeholder="Reorder Level" name="ReorderLevel">
+                    </div>
+                    <div class="form-group">
+                        <label style="margin-bottom:10px; margin-top:10px;" for="Discontinued">Discontinued</label>
+                        <input type="text" class="form-control" placeholder="Discontinued" name="Discontinued">
+                    </div>
+                    <button style="margin-bottom:10px; margin-top:10px;" type="submit" class="btn btn-primary">Add Product</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

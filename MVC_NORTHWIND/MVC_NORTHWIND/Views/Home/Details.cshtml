@@ -1,0 +1,36 @@
+﻿@model MVC_NORTHWIND.Models.Order_Detail
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        Order Details
+    </div>
+    <div class="card-body">
+        <table id="datatablesSimple">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Product ID</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Discount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.OrderID</td>
+                    <td>@Model.ProductID</td>
+                    <td>@Model.UnitPrice</td>
+                    <td>@Model.Quantity</td>
+                    <td>@Model.Discount</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

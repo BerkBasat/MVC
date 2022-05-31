@@ -1,0 +1,33 @@
+﻿@model List<MVC_Area.Models.Shipper>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Staff/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card mt-5">
+    <div class="card-header">
+        <h4>SHIPPERS</h4>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Shipper ID</th>
+                    <th>Company Name</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var shipper in Model)
+                {
+                <tr>
+                    <td>@shipper.ShipperID</td>
+                    <td>@shipper.CompanyName</td>
+                    <td>@shipper.Phone</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
